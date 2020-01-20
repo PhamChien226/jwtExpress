@@ -15,6 +15,3 @@ EXPOSE 4000
 # CMD [ "node", "./bin/www" ]
 CMD [ "node", "./servers.js" ]
 
-# FROM docker/whalesay:latest
-# RUN apt-get -y update && apt-get install -y fortunes
-# CMD /usr/games/fortune -a | cowsay
