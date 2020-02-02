@@ -17,20 +17,6 @@ let postUser = async (req, res) => {
         
     }
 
-    //   const post = new Post({
-    //     title: req.body.title,
-    //     description: req.body.description
-    // });
-
-    // try {
-    //     console.log("savePost")
-    //     const savedPost = await post.save();
-    //     console.log("savedPost", savedPost)
-    //     res.json(savedPost)
-    // } catch (error) {
-    //     res.json({ message: error })
-    // }
-
 }
 
 module.exports = {
