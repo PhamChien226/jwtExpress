@@ -7,6 +7,7 @@ const router = express.Router();
 const AuthMiddleWare = require("./middaleware/AuthMiddaleware");
 const AuthController = require("./controller/AuthController");
 const FriendController = require("./controller/FriendController");
+const UserController = require("./controller/UserController");
 
 /**
  * Init all APIs on your application
@@ -20,6 +21,7 @@ let initAPIs = (app) => {
   router.use(AuthMiddleWare.isAuth);
   // List Protect APIs:
   router.get("/friends", FriendController.friendLists);
+  router.post("/user",UserController.postUser);
   // router.get("/example-protect-api", ExampleController.someAction);
 
   return app.use("/", router);

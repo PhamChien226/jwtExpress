@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./src/servers.js"
   },
   "dependencies": {
     "bcrypt": "^3.0.7",
@@ -11,13 +11,12 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
-    "jsonwebtoken": "^7.4.3",
-    "mongoose": "^4.10.8",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2",
     "http-errors": "~1.6.3",
+    "jsonwebtoken": "^7.4.3",
+    "mongoose": "^5.8.11",
+    "morgan": "~1.8.1",
+    "nodemon": "^2.0.2",
+    "serve-favicon": "~2.4.2",
     "twig": "~0.10.3"
   }
 }
-
-
